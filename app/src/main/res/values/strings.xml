@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Custom Toolbar</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string-array name="product_names">
+        <item>Basmati Rice</item>
+        <item>Wheat Flour</item>
+        <item>Instant Noodles</item>
+        <item>Coconut Milk Powder</item>
+        <item>Tomato Ketchup</item>
+        <item>Canned Fish</item>
+        <item>Peanut Butter</item>
+        <item>Oats</item>
+        <item>Honey</item>
+        <item>Cornflakes</item>
+    </string-array>
+    <string-array name="product_brands">
+        <item>Rathna</item>
+        <item>Prima</item>
+        <item>Maggi</item>
+        <item>Maggi</item>
+        <item>MD</item>
+        <item>Jakmackeral</item>
+        <item>Kits</item>
+        <item>MD</item>
+        <item>MD</item>
+        <item>MD</item>
+    </string-array>
+    <integer-array name="product_prices">
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+        <item>1000</item>
+    </integer-array>
+</resources>
