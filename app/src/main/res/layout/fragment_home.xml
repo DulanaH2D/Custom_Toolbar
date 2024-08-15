@@ -9,21 +9,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/product_recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/product_recycler_row"
-        />
-<!--    add here /\ tools:listitem="@layout/product_recycler_row"-->
+        android:layout_height="wrap_content"
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tv_empty"
-        android:text="No Data Found"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/design_default_color_primary"
-        android:gravity="center"
-        android:visibility="gone"
         />
 
 </FrameLayout>

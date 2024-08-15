@@ -5,27 +5,18 @@ public class ProductModel {
     private String brandName;
     private int productPrice;
 
-    // private boolean isChecked = false;
+    private boolean isSelected = false;
 
-
-
-    /*public ProductModel(String productName, String brandName, int productPrice, boolean isChecked) {
+    public ProductModel(String productName, String brandName, int productPrice, boolean isSelected) {
         this.productName = productName;
         this.brandName = brandName;
         this.productPrice = productPrice;
-        this.isChecked = isChecked;
-    }*/
-
-    public ProductModel(String productName, String brandName, int productPrice) {
-        this.productName = productName;
-        this.brandName = brandName;
-        this.productPrice = productPrice;
+        this.isSelected = isSelected;
     }
 
     public ProductModel() {
 
     }
-
 
     public String getProductName() {
         return productName;
@@ -39,23 +30,13 @@ public class ProductModel {
         return productPrice;
     }
 
-    /*public void setProductName(String productName) {
-        this.productName = productName;
+    public boolean isSelected() {
+        return isSelected;
     }
 
-    public void setBrandName(String brandName) {
-        this.brandName = brandName;
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 
-    public void setProductPrice(int productPrice) {
-        this.productPrice = productPrice;
-    }
 
-    public boolean isChecked() {
-        return isChecked;
-    }
-
-    public void setChecked(boolean checked) {
-        isChecked = checked;
-    }*/
 }
