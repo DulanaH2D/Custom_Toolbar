@@ -5,27 +5,21 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RelativeLayout;
-import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nvision.customtoolbar.R;
 import com.nvision.customtoolbar.adapters.RecyclerViewAdapter;
-import com.nvision.customtoolbar.interfaces.RecyclerViewInterface;
 import com.nvision.customtoolbar.models.ProductModel;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment{
+public class HomeFragment extends Fragment {
     // private ProductModel productModel = new ProductModel();
     public RecyclerViewAdapter adapter;
     ArrayList<ProductModel> productModels = new ArrayList<>();
-
 
 
     @Override
@@ -47,7 +41,6 @@ public class HomeFragment extends Fragment{
             // Log error or handle the situation when RecyclerView is null
             Log.e("HomeFragment", "RecyclerView is not found in the layout");
         }
-
 
 
         return view;

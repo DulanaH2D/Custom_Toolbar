@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.nvision.customtoolbar.R;
-import com.nvision.customtoolbar.interfaces.RecyclerViewInterface;
 import com.nvision.customtoolbar.models.ProductModel;
 
 import java.util.ArrayList;
@@ -27,12 +26,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private boolean multiSelectMode = false;
     ArrayList<ProductModel> selectedItemList = new ArrayList<>();
 
-    /*public RecyclerViewAdapter(RecyclerViewInterface recyclerViewInterface, Context context, ArrayList<ProductModel> productModels) {
-        this.recyclerViewInterface = recyclerViewInterface;
-        this.context = context;
-        this.productModels = productModels;
-    }*/
-    public RecyclerViewAdapter( Context context, ArrayList<ProductModel> productModels) {
+
+    public RecyclerViewAdapter(Context context, ArrayList<ProductModel> productModels) {
 
         this.context = context;
         this.productModels = productModels;
@@ -44,12 +39,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         // This is where you inflate the layout (Giving a look to our rows)
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.product_recycler_row, parent, false);
-        // return new RecyclerViewAdapter.MyViewHolder(view, recyclerViewInterface);
         return new RecyclerViewAdapter.MyViewHolder(view);
     }
 
     @Override
-    // public void onBindViewHolder(@NonNull RecyclerViewAdapter.MyViewHolder holder, int position) {
     public void onBindViewHolder(@NonNull RecyclerViewAdapter.MyViewHolder holder, final int position) {
         // assigning values to the views we created in the product_recycler_row layout
         // based on the position of the recycler view
@@ -57,14 +50,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.bdName.setText(productModels.get(position).getBrandName());
         holder.pPrice.setText(String.valueOf(productModels.get(position).getProductPrice()));
 
-
-
-        holder.productRecyclerRow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, productModels.get(position).getProductName() + " Selected", Toast.LENGTH_SHORT).show();
-            }
-        });
 
         ProductModel productModel = productModels.get(position);
 
@@ -125,19 +110,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             pPrice = itemView.findViewById(R.id.product_price);
 
             productRecyclerRow = itemView.findViewById(R.id.product_recycler_row);
-
-            /*itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (recyclerViewInterface != null){
-                        int position = getAdapterPosition();
-
-                        if (position != RecyclerView.NO_POSITION){
-                            recyclerViewInterface.onItemClick(position);
-                        }
-                    }
-                }
-            });*/
         }
     }
 

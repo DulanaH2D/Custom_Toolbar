@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ash_color"
-    tools:context=".fragments.ContactUsFragment">
+    tools:context=".fragments.ContactUsFragment"
+    android:clickable="true">
     <!-- TODO: Update contact us fragment layout -->
     <TextView
         android:layout_width="wrap_content"

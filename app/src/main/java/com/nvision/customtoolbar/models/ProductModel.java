@@ -11,6 +11,7 @@ public class ProductModel {
         this.productName = productName;
         this.brandName = brandName;
         this.productPrice = productPrice;
+
         this.isSelected = isSelected;
     }
 

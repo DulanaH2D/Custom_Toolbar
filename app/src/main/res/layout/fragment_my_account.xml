@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.MyAccountFragment"
-    android:background="@color/ash_color">
+    android:background="@color/ash_color"
+    android:clickable="true">
     <!-- TODO: Update my account fragment layout -->
     <TextView
         android:layout_width="wrap_content"
